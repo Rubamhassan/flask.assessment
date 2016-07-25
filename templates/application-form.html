@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Skills-Web{% endblock %}
+
+{% block content %}
+<h1> Job Application</h1> 
+	<h2 class="border"> Please fill out your form:</h2>
+
+	<form action="/application" method="POST">
+		
+		First Name: <input class="textbox" type="text" name="firstname"><br>
+		Last Name: <input class="textbox last-name" type="text"  name="lastname"><br>
+	    Salary requirement: <input class="textbox" type="number" name="salary"><br>
+	
+		<label>
+	        Job Titile:
+	        <select name="job-titile">
+	            <option value="Software Engineer">Software Engineer</option>
+	            <option value="QA Engineer">QA Engineer</option>
+	            <option value="Product Manager">Product Manager</option>
+	        </select>
+	    </label>
+	    <input type="submit" class="textbox">
+	</form>
+
+
+{% endblock %}
